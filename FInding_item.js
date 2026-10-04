@@ -1,6 +1,7 @@
 let findMostFrequentItem = (inventory)=> { 
-      let value = Object.values(inventory);
-      let maximum =  Math.max(...value);
+      let value = Object.values(inventory); //eikhane dictionary teke value gula niye ekta array korbe
+      //let key = Object.keys(inventory); ////eikhane dictionary teke key gula niye ekta array korbe
+      let maximum =  Math.max(...value); //array venge just element gula r modde konta boro seta nebe.
       return Object.keys(inventory).filter( k =>{
          if(inventory[k] === maximum)
          {
