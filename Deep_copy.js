@@ -1,8 +1,8 @@
 let processCart = (jsonString)=> {
      if (typeof jsonString !== 'string') {
-        jsonString = JSON.stringify(jsonString);
+        jsonString = JSON.stringify(jsonString); //making it string.
     }
-    let arr1 = JSON.parse(jsonString);
+    let arr1 = JSON.parse(jsonString);/// making is object
     let arr2 = JSON.parse(jsonString);
     let dis = 0.1;
     for(let a = 0 ; a<arr2.length ;a++)
